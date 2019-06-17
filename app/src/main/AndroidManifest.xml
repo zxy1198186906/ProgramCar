@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.volvocars.programcar">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PMyCar"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name="com.volvocars.MainActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.volvocars.NewCaseActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name="com.volvocars.EditCaseActivity"
+            android:launchMode="singleInstance" />
+
+
+
+        <service android:name="com.volvocars.service.AdminService">
+            <intent-filter>
+                <action android:name="com.volvocars.service.AdminService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.volvocars.broadCast.BootFinishReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="21fb00d5217b69d8f151f87460f014b3" />
+    </application>
+
+</manifest>

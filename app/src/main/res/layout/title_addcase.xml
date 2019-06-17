@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="@color/slategrey">
+
+    <Button
+        android:id="@+id/btn_addcase_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="80dp"
+        android:background="@android:drawable/ic_delete" />
+
+    <TextView
+        android:layout_marginLeft="160dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Add New Case"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_notice"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_notice_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/papayawhip">
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="25sp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/img_notice1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_notice"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_notice2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_notice"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/img_notice1" />
+
+        <ImageView
+            android:id="@+id/img_notice3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_notice"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/img_notice2" />
+
+        <ImageView
+            android:id="@+id/img_notice4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_notice"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/img_notice3" />
+
+        <ImageView
+            android:id="@+id/img_notice5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_notice"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/img_notice4" />
+
+        <ImageView
+            android:id="@+id/img_notice6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_notice"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/img_notice5" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_below="@id/layout_notice_img"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="280dp"
+            android:background="@drawable/btn_run"
+            android:text="Run"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btn_enable"
+            android:text="Edit"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_marginLeft="15dp"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:textAllCaps="false"
+            android:text="Delete"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_enable"
+            android:layout_gravity="center_vertical"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

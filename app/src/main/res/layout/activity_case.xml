@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.volvocars.NewCaseActivity">
+
+    <include layout="@layout/title_addcase" />
+
+    <TextView
+        android:id="@+id/tv_casesig"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="110dp"
+        android:text="//"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/limegreen"/>
+
+    <EditText
+        android:id="@+id/edit_casename"
+        android:layout_width="480dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/tv_casesig"
+        android:layout_marginTop="105dp"
+        android:textSize="27sp"
+        android:maxLines="1"
+        android:hint="New Case"/>
+
+    <LinearLayout
+        android:id="@+id/layout_if"
+        android:layout_below="@id/edit_casename"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:text="If"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/limegreen"/>
+
+        <ListView
+            android:id="@+id/list_condition"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="640dp"
+            android:layout_height="wrap_content"
+            android:background="@color/darkgrey"/>
+
+
+        <Button
+            android:id="@+id/btn_add_condition"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="640dp"
+            android:layout_height="40dp"
+            android:text="+  Add new trigger"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@color/darkgrey"/>
+
+        <Button
+            android:id="@+id/btn_minus_condition"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="640dp"
+            android:layout_height="40dp"
+            android:text="-  Remove trigger"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@color/darkgrey" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_then"
+        android:layout_below="@id/layout_if"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:text="Then"
+            android:textSize="28sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/limegreen"/>
+
+        <ListView
+            android:id="@+id/list_consequence"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="640dp"
+            android:layout_height="wrap_content"
+            android:background="@color/darkgrey"/>
+
+        <Button
+            android:id="@+id/btn_add_consequence"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="640dp"
+            android:layout_height="40dp"
+            android:text="+  Add new action"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@color/darkgrey"/>
+
+        <Button
+            android:id="@+id/btn_minus_consequence"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="640dp"
+            android:layout_height="40dp"
+            android:text="-  Remove action"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@color/darkgrey" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/layout_then"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Commit Case"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:enabled="false"
+        android:background="@drawable/btn_enable"/>
+
+
+</RelativeLayout>

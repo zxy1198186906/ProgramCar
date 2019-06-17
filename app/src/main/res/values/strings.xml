@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProgramCar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="program_title">Program Car</string>
+    <string name="program_text">Service is running background</string>
+</resources>

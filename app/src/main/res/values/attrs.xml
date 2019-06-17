@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitlebarView">
+        <attr name="centerTextColor" format="color" />
+        <attr name="centerTitle" format="string" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/layout_set_params"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="110dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Select Category"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:enabled="false"
+            android:textColor="@color/grey"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Set Parameter"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:enabled="true"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_line_set_params"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_set_params"
+        android:background="@mipmap/line"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_consequence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/img_line_set_params">
+
+        <LinearLayout
+            android:id="@+id/layout_item_params"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_consequence"
+                android:layout_marginLeft="30dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+
+            <TextView
+                android:id="@+id/tv_consequence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="d"
+                android:textSize="27sp"
+                android:textColor="@color/black"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+              android:id="@+id/layout_specific_condition"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_below="@id/layout_item_params"
+              android:layout_marginTop="20dp"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/tv_specific_intro"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:layout_marginLeft="50dp"
+                  android:text="1"
+                  android:textAllCaps="false"
+                  android:textColor="@color/black"
+                  android:textSize="24sp" />
+
+              <TextView
+                  android:id="@+id/tv_specific_intro_change"
+                  android:layout_marginLeft="40dp"
+                  android:layout_gravity="center_vertical"
+                  android:gravity="center"
+                  android:layout_width="120dp"
+                  android:layout_height="50dp"
+                  android:textColor="@color/black"
+                  android:textAllCaps="false"
+                  android:textSize="24sp"
+                  android:background="@drawable/img_click"/>
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/layout_specific_consequence"
+              android:layout_below="@id/layout_specific_condition"
+              android:layout_marginTop="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:orientation="horizontal">
+
+              <EditText
+                  android:id="@+id/edit_specific_control"
+                  android:layout_width="120dp"
+                  android:layout_height="50dp"
+                  android:layout_marginLeft="50dp"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/black"
+                  android:textAlignment="center"
+                  android:editable="false"
+                  android:enabled="false"
+                  android:textAllCaps="false"
+                  android:textSize="24sp"
+                  android:background="@drawable/btn_enable"/>
+
+              <TextView
+                  android:id="@+id/tv_specific_signal"
+                  android:layout_width="120dp"
+                  android:layout_height="40dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/black"
+                  android:textAlignment="center"
+                  android:textAllCaps="false"
+                  android:textSize="24sp"/>
+          </LinearLayout>
+
+          <ImageView
+              android:id="@+id/img_line_params"
+              android:layout_below="@id/layout_specific_consequence"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:background="@mipmap/line"/>
+
+        <LinearLayout
+            android:id="@+id/layout_higher_params"
+            android:layout_below="@id/img_line_params"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_low"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:background="@color/wheat" />
+
+            <TextView
+                android:id="@+id/tv_high"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="disconnected"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:background="@color/wheat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_final_params"
+            android:layout_below="@id/img_line_params"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_decrease"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:text="-"
+                android:textSize="30sp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_click"/>
+
+            <EditText
+                android:id="@+id/edit_now"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:text="24"
+                android:editable="false"/>
+
+            <Button
+                android:id="@+id/btn_increase"
+                android:layout_marginLeft="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:text="+"
+                android:textSize="26sp"
+                android:background="@drawable/btn_click" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_below="@id/img_line_params"
+            android:layout_marginTop="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="Confirm"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:enabled="false"
+            android:background="@drawable/btn_enable"/>
+    </RelativeLayout>
+
+</RelativeLayout>
